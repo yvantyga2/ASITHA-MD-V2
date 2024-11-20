@@ -58,10 +58,8 @@
 
   _Github Account._<br><br>
      [![NIMAYT](https://img.shields.io/badge/HOW_TO_MAKE_GITHUB_ACCOUNT-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/NZ6oSZfoR88?si=A4ThxQppWddcYZYD)
-<br><br>
-   _Github Auth token get_ <br><br>
-[![NIMAYT](https://img.shields.io/badge/HOW_TO_MAKE_GITHUB_AUTH_TOKEN-red?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/N-e3WbQZWSY?si=7s1bQUi3sNscvpiO)
- <hr>
+<br>
+<hr>
 <b>CONTACT OWNER</b>
 
 [![vajira](https://telegra.ph/file/99460844d012cad1b7ee4.jpg)](https://wa.me/94743381623)
@@ -95,22 +93,15 @@ on:
   pull_request:
     branches:
       - main
-  workflow_dispatch:
-  schedule:
-    - cron: '0 */6 * * *'
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [20.x]
-
-    env:
-      SESSION_ID: Enter Your SESSION_ID
-      GITHUB_AUTH_TOKEN: Enter Your GITHUB_AUTH_TOKEN
-      GITHUB_USERNAME : Enter your GITHUB_USERNAME
 
     steps:
     - name: Checkout repository
