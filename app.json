@@ -1,21 +1,23 @@
 {
-  "name": "ASITHA-MD",
-  "description": "Javascript WhatsApp bot made by ASITHA",
-  "logo": "https://i.postimg.cc/rmL0Tm9y/Asitha-MD.png",
-  "keywords": ["bot"],
+  "name": "VAJIRA-MD",
+  "description": "VAJIRA-MD has been designed to make things easier and fun while using WhatsApp. 👨‍💻❤️",
+  "logo": "https://telegra.ph/file/235d945df230d71f246b6.jpg",
+  "keywords": ["vajiramd", "bot", "whatsapp bot", "multi device", "vajira-md"],
   "success_url": "/",
 
   "env": {
     "SESSION_ID": {
-      "description": "Put the session-id here.",
-      "required": true
-    }
-},
-
-     "buildpacks": [
+            "description": "Type the Session-ID you got from scaning QR",
+            "required": true,
+            "value": "put session id here"
+        }
+    },
+         "buildpacks": [
         {
             "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
         }
      ],
   "stack": "heroku-24"
+  
+  
 }
